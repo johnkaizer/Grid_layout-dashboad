@@ -10,14 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ModernDashborad">
         <activity
-            android:name=".Example"
+            android:name=".Dashboard"
+            android:exported="true" />
+        <activity
+            android:name=".About"
+            android:exported="true" />
+        <activity
+            android:name=".BottomNavigation"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                android:name=".Example"
+                android:exported="true" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
